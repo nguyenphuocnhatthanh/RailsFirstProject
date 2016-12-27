@@ -1,0 +1,8 @@
+<h1>New Category</h1>
+<!-- day la vd show thoi -->
+<% if flash.present? %>
+  <%= flash[:alert] %>
+<% end%>
+<%= render 'form', category: @category %>
+
+<%= link_to 'Back', categories_path %>
